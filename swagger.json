@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "The api server",
+    "description": "The api services for education \n \n ****** Develop by ******\n Owamamwen Ogunniyi",
     "version": "1.0.0",
-    "title": "Week Seven assignment",
+    "title": "Education - Instructor",
     "contact": {
       "email": "ogu21002@byui.edu"
     },

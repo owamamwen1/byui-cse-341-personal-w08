@@ -91,30 +91,46 @@ DELETE http://localhost:3000/user/Luca HTTP/1.1
 // PRODUCTION Deploy 
 
 ### GET all users 
-GET https://byui-cse-341-personal-w06.onrender.com/user
+GET https://byui-cse-341-personal-w08.onrender.com/user
 
 ### GET user by id 
 
-GET https://byui-cse-341-personal-w06.onrender.com/Luca
+GET https://byui-cse-341-personal-w08.onrender.com/Luca
 
 ### Create new user 
 
-POST  https://byui-cse-341-personal-w06.onrender.com/user HTTP/1.1
-content-type: application/json
-
-{
-  "username": "Luca",
-  "password": "Luca@12345"
-}
-
-### PUT user 
-PUT https://byui-cse-341-personal-w06.onrender.com/user/Luca HTTP/1.1
+POST  https://byui-cse-341-personal-w08.onrender.com/user HTTP/1.1
 content-type: application/json
 
 {
   "username": "Luca",
   "password": "Luca@12345",
-  "profile": {
+   "firstName": "Luca",
+   "lastName": "Matteo",
+   "email": "luca@yahoo.com",
+   "phoneNumber": "453563635",
+   "country": "USA",
+   "city": "Utah",
+   "isPublic": true,
+   "faculty_name": "Applied Technology"
+}
+
+### PUT user 
+PUT https://byui-cse-341-personal-w08.onrender.com/user/Luca HTTP/1.1
+content-type: application/json
+
+{
+  "username": "Luca",
+  "password": "Luca@12345",
+   "firstName": "Luca",
+   "lastName": "Matteo",
+   "email": "luca@yahoo.com",
+   "phoneNumber": "453563635",
+   "country": "USA",
+   "city": "Utah",
+   "isPublic": true,
+   "faculty_name": "Applied Technology",
+    "profile": {
     "student": [
       {
         "fullName": "Owamamwen Ogunniyi",
@@ -196,18 +212,9 @@ content-type: application/json
         ]
       }
     ]
-  },
-  "info": {
-    "firstName": "Luca",
-    "lastName": "Matteo",
-    "email": "luca@yahoo.com",
-    "phoneNumber": "453563635",
-    "country": "USA",
-    "city": "Utah",
-    "isPublic": true,
-    "faculty_name": "Applied Technology"
   }
 }
+
 
 
 
